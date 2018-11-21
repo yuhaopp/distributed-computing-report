@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 
 \usepackage{fullpage}
+\usepackage{indentfirst}
 \usepackage{parskip}
 \usepackage{amsmath}
 \usepackage{hyperref}
@@ -12,12 +13,46 @@
 \usepackage[UTF8]{ctex}
 
 \begin{document}
+\setlength{\parindent}{2em}
 
 \input{frontpage}
 
 \tableofcontents
 \clearpage
 
-\section{Introduction}
+\section{概述}
+1. 比特币及区块链衍生品出现及其目的；
 
+2. 区块链存在一些共有的问题；
+
+3. 为了解决这些问题，提出off-chian solutions. Lightning Network是其中代表；
+
+4. PCN 用于连接链下的用户，用户间形成的网络。网络面临问题: 寻找最优路径（基于路由费用、费率、可靠性）
+LN使用了主动式的路由协议。有一些缺点。
+
+5. 我们提出的协议，可以解决这些缺点。具体为...
+
+\section{领域研究}
+1. 路由相关定义
+
+2. PSTN，MANET，
+由于PCN研究较少，故参考MANET(有一些相似之处)
+
+3. 路由协议主要有5种，reactive, proactive, hybrid (i.e. a combination out of both: reactive and proactive), hierarchical and coordinate-based。
+
+4. Flare，hybrid network. 列举我们的目标与Flare的区别。
+
+\section{需求与算法选择}
+为了找到合适的算法，对网络提出了几点需求：
+1. Autonomy and self-reliance
+2. Cost guaranties: Each
+3. Time-lock guaranties
+4. Flexibility
+5. Prevent network partitioning
+6. Real-time
+7. Up-to-dateness
+8. Lightweight and scalable
+9. Trustlessness
+10. Trustlessness
+基于以上，我们选择/设计了AODV-based algorithm.
 \end{document}
